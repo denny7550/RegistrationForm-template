@@ -1,3 +1,3 @@
 # RegistrationForm-template
 
-Simple registration HTML5/CSS3 form template.
+Simple registration form, HTML5/CSS3 template.
