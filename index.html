@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="bg">
+	<head>
+	<meta charset="utf-8">
+	<title>Регистрация</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+	<script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
+	<script type='text/javascript' src="js/handlebars-v3.0.0.js"></script>
+	<script type='text/javascript' src="js/main.js"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>    
+		<form id="regform" method="GET" action="process.php" name="form1" >	
+		<h1>Регистрирай се тук</h1>
+		  <fieldset>  
+		  <p class="invalid">Въведете имената си и валиден имeйл адрес!</p> 
+		    <div> 
+		    
+		        <label>Име
+		        <input id="first-name" name="given-name" type="text" placeholder="Собствено" required autofocus> 
+				</label>
+		    </div>
+		    <div> 
+		        <label>Фамилия
+		        <input id="family-name" name="family-name" type="text" placeholder="Фамилно" required autofocus> 
+				</label>
+		    </div>
+		    <div> 
+		        <label>Имейл адрес
+		        <input id="email" name="email" type="email" placeholder="example@domain.com" required>
+				</label> 
+			</div>
+			<input type="submit" required name="next" class="next action-button" value="Напред">
+		  </fieldset>
+		  <fieldset>
+		  	<p class="invalid">Въведете парола и мобилен телефон!</p>    
+		    <div> 
+		        <label for="password">Създайте парола
+    			<input type="password" id="password" name="password" required=""> 
+    			</label>
+		    </div>
+		    <div> 
+		        <label for="repassword">Потвърдете паролата си
+    			<input type="password" id="repassword" name="repassword" required=""> 
+    			</label>
+		    </div>
+		    <div> 
+		        <label for="phone">Мобилен телефон
+            	<input name="phone" placeholder="+359 00 000 0000" required="" type="text">
+            	</label>
+		    </div> 
+			<input type="button" name="previous" class="previous action-button" value="Назад">		  
+		   <input type="submit" required name="next" class="next action-button" value="Напред">
+		  </fieldset>
+		  <fieldset>
+		  	<p class="invalid">Оставете ни съобщение!</p>  
+		  		<h2>Оставете съобщение</h2>
+			   	<div> 
+			        <label>  
+			        <textarea name="comment" rows=10 required></textarea>
+					</label> 
+			   	</div> 
+			   <input type="button" name="previous" class="previous action-button" value="Назад">		  
+			   <input type="submit" required name="next" class="next action-button" value="Напред">
+		   </fieldset>
+		   <fieldset>
+		   <p class="invalid">Моля изберете!</p>  
+		    <div> 		
+				<label>Местоположение
+				<select class="select-style continent" required autofocus name="continent">
+				    <option value="Не сте избрали държава">Държава</option>
+				    <option value="България">България</option>
+				    <option value="Румъния">Румъния</option>
+				    <option value="Сърбия">Сърбия</option>
+				    <option value="Гърция">Гърция</option>
+				    <option value="Полша">Полша</option>
+			    </select><br><br>
+			    </label> 
+			</div>
+		      	<div class="radio-type"> 
+		          <input value="Жена" id="btn1" name="radio-type" type="radio"> 
+		          <label for="radio1">Жена</label> 
+		          <input value="Мъж" id="btn2" name="radio-type" type="radio">
+		          <label for="radio2">Мъж</label> 
+		          <input value="Не казвам" id="btn3" name="radio-type" type="radio"> 
+		          <label for="radio3">Не казвам</label>
+		      	</div> 
+				<input type="button" name="previous" class="previous action-button" value="Назад">
+	     		<input type="submit" required name="next" class="next action-button" value="Напред">
+		  </fieldset> 
+		  <fieldset>
+		  <p class="invalid">Приехте ли условията?</p>    
+			<div>    
+			   <label for="date">Дата
+        		<input type="date" name="date">
+        		</label>
+			</div>
+			<div class="checkbox-style">
+			   <legend></legend>
+			    <input type="checkbox" name="read" value="read">Прочетох <a title="Terms" href="javascript:;">Общите условия</a>!</br>
+			    <input type="checkbox" name="accept" required autofocus value="accept">Приемам <a title="Terms" href="javascript:;">Общите условия</a>!</br>
+			</div>		
+			<input type="button" name="previous" class="previous action-button" value="Назад">
+			<input type="submit" required name="next" class="submit action-button" value="Готов съм">		   
+		  </fieldset> 
+		</form> 
+	</body>
+</html>

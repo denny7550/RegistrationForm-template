@@ -1,0 +1,217 @@
+/*  Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of reset */
+
+/* Font */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+	font-family: montserrat, arial, verdana;
+	background: #45484d;
+}
+h1 {
+	font-size: 25px;
+ 	color: #F1F1F1;
+ 	text-align: center;
+ 	margin-bottom: 21px;
+ 	font-weight: bold;
+}
+h2 {
+	font-size: 20px;
+ 	color: #141414;
+ 	text-align: center;
+ 	margin-bottom: 21px;
+ 	font-weight: bold;
+}
+#regform,
+#get {
+	max-width: 40%;
+	margin: 5% auto;
+	text-align: center;
+	position: relative;
+
+}
+	#regform fieldset {
+		background: #f1f1f1;
+		border: 0 none;
+		border-radius: 3px;
+		box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+		padding: 5% 5%;
+		box-sizing: border-box;
+		width: 100%;
+		position: absolute;
+	}
+
+	#regform fieldset:not(:first-of-type) {
+		display: none;
+	}
+
+	#regform .action-button {
+		width: 100px;
+		background: #CB0B28;
+		font-weight: bold;
+		color: white;
+		border: 0 none;
+		border-radius: 1px;
+		cursor: pointer;
+		padding: 10px 5px;
+		margin: 10px 30px;
+	}
+	#regform input[type="text"]
+	, #email
+	 {
+	  	max-width: 40%;
+
+	}
+
+		#regform input, textarea {
+		  background-color: rgba(255, 255, 255, 0.4);
+		  border: 1px solid rgba(122, 192, 0, 0.15);
+		  padding: 7px;
+		  color: #4b4b4b;
+		  font-size: 14px;
+		  border-radius: 5px;
+		}
+
+		input[type=checkbox] {
+		  text-align: left;
+		}
+
+		#regform .select-style {
+		  -webkit-appearance: button;
+		  -webkit-border-radius: 2px;
+		  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+		  -webkit-padding-end: 50px;;
+		  -webkit-padding-start: 2px;
+		  -webkit-user-select: none;
+		  background-image: url(images/select-arrow.png), 
+		 -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+		  background-position: center right;
+		  background-repeat: no-repeat;
+		  border: 0px solid #FFF;
+		  color: #555;
+		  font-size: inherit;
+		  margin-top: 10px;
+		  text-overflow: ellipsis;
+		  white-space: nowrap;
+		  
+		}
+		#regform .checkbox-style {
+			text-align: left;
+		}
+		#regform .action-button:hover, #regform .action-button:focus {
+			box-shadow: 0 0 0 2px white, 0 0 0 3px #949494;
+		}
+		label, input, select {
+		display:block;
+		padding: 6px;
+		}
+	#regform .submit {
+		background: #18C885;
+		float:right;
+	}
+
+	#regform .previous {
+		float:left;
+	}
+
+	#regform .next {
+		float:right;
+	}
+
+	input, select {
+		margin: 10px auto;
+		
+	}
+
+	fieldset {
+		margin-bottom: 15px;
+		padding: 10px;
+	}
+
+	fieldset fieldset {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	input[type="checkbox"] {
+		display:inline;
+	}
+
+.invalid {
+	color:#CB0B28;
+	display: none;
+}
+
+.radio-type input, .radio-type label {
+	display:inline-block;
+	margin-bottom: 20px;
+}
+
+
+
+.get-reg {
+	background: #f1f1f1;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 5% 5%;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+}
+@media (max-width: 1100px) {
+	#regform .previous,
+	#regform .next,
+	#regform .submit {
+		float:none;
+		margin: 5px auto;
+	}
+}
+@media (max-width: 600px) {
+	
+}
